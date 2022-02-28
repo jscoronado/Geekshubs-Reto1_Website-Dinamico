@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="body" class="home">
+<body id="body" class="home header-fixed-top dynamic-backgrounds">
 
 <header id="header" class="header navbar bg-transparent fixed-top" data-aos="fade-down" data-aos-duration="800"
         data-aos-once="true">
@@ -66,13 +66,12 @@
 
 <main class="main-content content">
     <section id="hero" class="content-section hero-section section-hero background-attachment"
-             style="background-image: url('./imgs/portada-matryoshka-min.jpg')"
-    >
+             style="background-image: url('./imgs/portada-matryoshka-min.jpg')">
         <div class="content-hero container text-center principal">
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-12">
                     <h1 class="content-hero__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600"
-                        data-aos-offset="0" data-aos-once="true" >EAT.<br/>DRINK.<br/>DANCE.<br/>REPEAT.</h1>
+                        data-aos-offset="0" data-aos-once="true">EAT.<br/>DRINK.<br/>DANCE.<br/>REPEAT.</h1>
                 </div>
             </div>
         </div>
@@ -154,6 +153,76 @@
         </div>
     </section>
 
+    <section id="nuestras-cervezas"
+             class="content-parallax cervezas-section change-color-content bg_primary_red content-left"
+             data-bg-offset="400">
+        <div class="container block-flex">
+            <div class="figure_content-parallax">
+                <div class="content-parallax-figure content-parallax-figure_shadow parallax-image" data-speed="20"
+                     data-transiton="0.1s" data-parent-section="nuestras-cervezas">
+                    <img src="imgs/cervezas.png" alt="Sobre Cevezas Matryoshka Rock-Café">
+                </div>
+                <div class="content-parallax-figure parallax-image" data-speed="20" data-transiton="0.3s"
+                     data-parent-section="nuestras-cervezas"
+                     style="transform: translate3d(0px, 190px, 0px);transition: all 0.3s ease 0s;">
+                    <img src="imgs/cervezas.png" alt="Cervezas Matryoshka Rock-Café">
+                </div>
+            </div>
+            <div class="description_content-parallax row left">
+                <div class="col-xl-5 offset-xl-0 col-lg-6 offset-lg-0 col-md-8 offset-md-0 col-sm-8 offset-sm-0 col-8 offset-0">
+            <span class="intro-content-parallax" data-aos="fade-up" data-aos-duration="600" data-aos-offset="90"
+                  data-aos-once="true">¿Tienes sed?</span>
+                    <h2 class="title-content-parallax" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600"
+                        data-aos-offset="90" data-aos-once="true">Descubre <br/>nuestras cervezas de <br/>importación
+                    </h2>
+                    <p class="desc-content-parallax" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+                       data-aos-offset="90"
+                       data-aos-once="true">Cervezas rubias, tostadas y negras importadas de Rusia,
+                        Ucrania, Lituania, República Checa, Polonia... ¡Y mucho más!</p>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" data-aos-offset="90"
+                         data-aos-once="true">
+                        <a href="/cervezas.html" class="btn btn-animate btn-white" data-hover="Nuestras Cervezas →">
+                            <div>Descubre</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros"
+             class="content-parallax nosotros-section change-color-content bg_primary_beige content-right"
+             data-bg-offset="400">
+        <div class="container">
+            <div class="figure_content-parallax">
+                <div class="content-parallax-figure content-parallax-figure_shadow parallax-image" data-speed="38"
+                     data-transiton="0.2s" data-parent-section="nosotros">
+                    <img src="imgs/matryoshkas.png" alt="Figura Matryoshka Rock-Café">
+                </div>
+                <div class="content-parallax-figure parallax-image" data-speed="28" data-transiton="0.2s"
+                     data-parent-section="nosotros">
+                    <img src="imgs/matryoshkas.png" alt="Sombra Figura Matryoshka Rock-Café">
+                </div>
+            </div>
+            <div class="description_content-parallax row right">
+                <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-7 col-md-8 offset-md-0 col-sm-8 offset-sm-0 col-8 offset-0">
+            <span class="intro-content-parallax" data-aos="fade-up" data-aos-duration="600" data-aos-offset="90"
+                  data-aos-once="true">Ven y conócenos</span>
+                    <h2 class="title-content-parallax" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600"
+                        data-aos-offset="90" data-aos-once="true">Mucho <br/>más en el interior...</h2>
+                    <p class="desc-content-parallax" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+                       data-aos-offset="90" data-aos-once="true">Como las matryoshkas rusas, nosotros también queremos
+                        ofrecer más dentro de nuestro local, de lo que en principio no podrías imaginar...</p>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" data-aos-offset="90"
+                         data-aos-once="true">
+                        <a href="/cervezas.html" class="btn btn-animate btn-color" data-hover="Sobre Matryoshka →">
+                            <div>Conoce</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="content-section footer change-color-content bg_primary_black" data-color-change="static">
         <div class="container">
             <div class="footer-content footer-text text-center">
@@ -230,8 +299,7 @@
     <script src="js/dist/vendor.js"></script>
     <script src="js/dist/dist.js"></script>
     <script src="js/dist/main.js"></script>
-    <script>
-    function IsSafari() {
+    <script>function IsSafari() {
         return navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && !navigator.userAgent.match('CriOS');
     }
 
@@ -265,7 +333,6 @@
     <script>window.dataLayer = window.dataLayer || [];
     </script>
 </main>
-
 </body>
 
 </html>
