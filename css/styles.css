@@ -6,6 +6,20 @@ Version: 1.0
 */
 
 /********************** TABLE OF CONTENTS **********************
+    # 1. Fonts
+    # 2. Reset
+    # 3. Global Settings - Tipography
+    # 4. Components
+    # 5. Header
+    # 6. Header Menu
+    # 7. Hero
+    # 8. Main - Home
+    # 9. Nosotros
+    # 10. Cervezas
+    # 11. Contacto
+    # 12. Forms
+    # 13. Footer
+    # 14. Otros
 ***************************************************************/
 
 /*--------------------------------------------------------------
@@ -132,7 +146,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-# 3. COMPONENTS
+# 4. COMPONENTS
 --------------------------------------------------------------*/
 a {
     color: #c23c48;
@@ -232,7 +246,7 @@ a:focus::after {
 }
 
 /*--------------------------------------------------------------
-# 4. HEADER
+# 5. HEADER
 --------------------------------------------------------------*/
 header {
     position: fixed;
@@ -416,7 +430,7 @@ body.content-text-dark header .navbar-toggle .line {
 }
 
 /*--------------------------------------------------------------
-# 5. HEADER MENU
+# 6. HEADER MENU
 --------------------------------------------------------------*/
 #menu {
     position: fixed;
@@ -515,7 +529,7 @@ nav.navbar-menu .navbar-menu__main .navbar-menu__item a:hover:after {
 }
 
 /*--------------------------------------------------------------
-# 3. HERO
+# 7. HERO
 --------------------------------------------------------------*/
 section.hero-section {
     position: relative;
@@ -642,7 +656,7 @@ section.hero-section .visual-hero {
 }
 
 /*--------------------------------------------------------------
-# 4. MAIN
+# 8. MAIN
 --------------------------------------------------------------*/
 main {
     position: relative;
@@ -765,7 +779,7 @@ main {
 }
 
 /*-------------------------------------------------------------
-# 6. NOSOTROS
+# 9. NOSOTROS
 --------------------------------------------------------------*/
 .columns-images {
     position: relative;
@@ -859,7 +873,7 @@ main {
 }
 
 /*-------------------------------------------------------------
-# 7. CARTA CERVEZAS
+# 10. CARTA CERVEZAS
 --------------------------------------------------------------*/
 article.item-cerveza {
     position: relative;
@@ -969,7 +983,114 @@ article.item-cerveza .description_item-cerveza {
 }
 
 /*-------------------------------------------------------------
-# 12. FOOTER
+# 11. CONTACTO
+--------------------------------------------------------------*/
+/* ## Section Contacto */
+section#contacto {
+    min-height: 100vh;
+    color: #f1f5f7;
+    background: url('../imgs/portada-contacto.jpg') no-repeat right;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+section#contacto .data_content-section {
+    padding: 0 60px;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+section#contacto .data_content-section .contact-content-section {
+    font-size: 42px;
+    color: #f1f5f7;
+}
+section#contacto .contact-content-section span {
+    font-size: 17px;
+    display: block;
+}
+section#contacto .contact-content-section a {
+    color: #cb6971;
+}
+section#contacto .contact-content-section a:hover {
+    color: #f1f5f7;
+}
+
+/* ## Section Reserva */
+section#reserva {
+    color: #f1f5f7;
+    background: #2b2b2b;
+}
+section#reserva .form_reserva {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px 7%;
+}
+#mapa {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    section#reserva .form_reserva {
+        order: 2;
+    }
+}
+@media (max-width: 991px) {
+    section#contacto {
+        padding-bottom: 0;
+    }
+    section#contacto .data_content-section {
+        padding: 0 15px;
+    }
+    section#contacto .data_content-section h3.contact-content-section {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    #mapa {
+        height: 33vh;
+    }
+}
+
+/*-------------------------------------------------------------
+# 12. FORMS
+--------------------------------------------------------------*/
+form {
+    margin-top: 30px;
+}
+form label {
+    color: #646464;
+}
+form input {
+    color: #f1f5f7 !important;
+    background: #333333 !important;
+    padding: 15px 20px !important;
+}
+form input::placeholder {
+    color: #646464 !important;
+}
+form button, button.btn.btn-form {
+    font-family: 'Serif Gothic', serif;
+    position: relative;
+    color: #2b2b2b;
+    background: #efe1d9;
+    border: 1px solid #efe1d9;
+    padding: 10px 30px;
+    margin: 30px 15px 0 15px;
+    overflow: hidden;
+    cursor: pointer;
+    pointer-events: all;
+}
+form button:hover, button.btn.btn-form:hover {
+    color: #efe1d9;
+    background: transparent;
+    border: 1px solid #efe1d9;
+}
+
+/*-------------------------------------------------------------
+# 13. FOOTER
 --------------------------------------------------------------*/
 .home footer.content-section {
     padding: 240px 0 0 0;
@@ -1088,3 +1209,7 @@ footer .info_footer-contact a:hover {
 .copy.copy_footer-contact a:hover {
     color: #f1f5f7;
 }
+
+/*-------------------------------------------------------------
+# 14. OTROS
+--------------------------------------------------------------*/
