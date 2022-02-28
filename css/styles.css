@@ -859,6 +859,116 @@ main {
 }
 
 /*-------------------------------------------------------------
+# 7. CARTA CERVEZAS
+--------------------------------------------------------------*/
+article.item-cerveza {
+    position: relative;
+    padding: 20vh 0 0 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+body:not(.content-text-dark) article.item-cerveza * {
+    color: #f1f5f7;
+}
+
+/* ## Main Cerveza */
+article.item-cerveza .main_item-cerveza ul.data_item-cerveza {
+    margin-top: 60px;
+    list-style: none;
+}
+article.item-cerveza .main_item-cerveza ul.data_item-cerveza li {
+    color: #c23c48;
+    margin-bottom: 15px;
+}
+article.item-cerveza .main_item-cerveza ul.data_item-cerveza li strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+article.item-cerveza .main_item-cerveza ul.data_item-cerveza li span {
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 5px 0 30px 0;
+}
+
+/* ## Image Cerveza */
+article.item-cerveza .image_item-cerveza {
+    text-align: center;
+}
+article.item-cerveza .image_item-cerveza img {
+    position: relative;
+    top: 100px;
+    height: 560px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(8px 6px 12px #444);
+}
+
+/* ## Description Cerveza */
+article.item-cerveza .description_item-cerveza {
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    article.item-cerveza .main_item-cerveza {
+        text-align: right;
+    }
+}
+@media (max-width: 991px) {
+    article.item-cerveza {
+        min-height: 100vh;
+    }
+    article.item-cerveza .main_item-cerveza ul.data_item-cerveza {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    article.item-cerveza .main_item-cerveza ul.data_item-cerveza li {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        margin: 0 10px 10px 10px;
+        border-radius: 50px;
+        background: #363636;
+        position: relative;
+        min-width: 140px;
+    }
+    .content-text-dark article.item-cerveza .main_item-cerveza ul.data_item-cerveza li {
+        background: #c23c48;
+    }
+    article.item-cerveza .main_item-cerveza ul.data_item-cerveza li strong {
+        font-size: 10px;
+        position: relative;
+        top: 4px;
+    }
+    article.item-cerveza .main_item-cerveza ul.data_item-cerveza li span {
+        font-size: 18px;
+        color: #f1f5f7 !important;
+        letter-spacing: 1px;
+        margin: 5px 0 10px 0;
+    }
+    article.item-cerveza .image_item-cerveza img {
+        position: absolute;
+        right: 15px;
+        top: -160px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    article.item-cerveza .main_item-cerveza ul.data_item-cerveza li {
+        width: 100%;
+        min-width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+/*-------------------------------------------------------------
 # 12. FOOTER
 --------------------------------------------------------------*/
 .home footer.content-section {
