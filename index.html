@@ -64,6 +64,48 @@
     </div>
 </header>
 
+<main class="main-content content">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/dist/vendor.js"></script>
+    <script src="js/dist/dist.js"></script>
+    <script src="js/dist/main.js"></script>
+    <script>
+    function IsSafari() {
+        return navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && !navigator.userAgent.match('CriOS');
+    }
+
+    window.addEventListener('load', function () {
+
+        var pluginAnimationsObject = new pluginAnimations({
+            bgColors: {
+                enable: true,
+                className: 'change-color-content',
+                offset: 74,
+                timeTransition: '0.5s',
+                dynamicBackgrounds: true
+            }
+        });
+
+        pluginAnimationsObject.init();
+
+        if (!IsSafari()) {
+
+            var contentParallax = new parallaxImages();
+            contentParallax.init();
+        }
+
+        AOS.init({
+            disable: 'mobile',
+            offset: 120,
+            once: true,
+            mirror: true
+        });
+    });</script>
+    <script>window.dataLayer = window.dataLayer || [];
+    </script>
+</main>
+
 </body>
 
 </html>
