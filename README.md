@@ -17,7 +17,7 @@ Aprovechando este proyecto que llevaba en mente, se ha realizado una **carta de 
 Teniendo en cuenta los requisitos, se ha desarrollado esta estructura de páginas:
 
 * [Inicio / Presentación](https://jscoronado.github.io/Geekshubs-Reto1_Website-Dinamico) : Presentación del establecimiento y de las secciones que componen la web.
-* [Nosotros](https://jscoronado.github.io/Geekshubs-Reto1_Website-Dinamico/nosotros.html) : Información más detallada del establecimiento como tipo de importación, eventos, selección musical, etc.
+* [Nosotros](https://jscoronado.github.io/Geekshubs-Reto1_Website-Dinamico/nosotros.html) : Información detallada del establecimiento como tipo de importación, eventos, selección musical, etc.
 * [Cervezas](https://jscoronado.github.io/Geekshubs-Reto1_Website-Dinamico/cervezas.html) : Listado de cervezas con información de su composición, origen, graduación, etc.
 * [Contacto](https://jscoronado.github.io/Geekshubs-Reto1_Website-Dinamico/contacto.html) : Página de información y localización del establecimiento.
 
